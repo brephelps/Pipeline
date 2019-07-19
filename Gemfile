@@ -70,3 +70,4 @@ source 'https://rails-assets.org' do
 end
 
 gem 'simple_form'
+gem 'rails_12factor', group: :production
