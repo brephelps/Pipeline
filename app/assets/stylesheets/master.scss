@@ -24,9 +24,6 @@
     font-size: 10px;
     line-height: 16px;
     cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
 }
 
 .slogan {
@@ -66,6 +63,11 @@ h2 {
   font-family: 'Oswald', sans-serif;
 }
 
+h2 span {
+  color: #dddddd;
+  font-family: 'sinkin_sans400_italic', sans-serif;
+}
+
 .next-quote {
   color:#f84342;
   font-family: 'sinkin_sans400_italic', sans-serif;
@@ -82,4 +84,18 @@ h2 {
 
 .about {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.modal {
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+::selection {
+  background-color: #f84342;
 }
