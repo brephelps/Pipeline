@@ -12,6 +12,7 @@
   <body>
     <header class="row">
       <div class="col-3">
+        <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
           You know
@@ -20,13 +21,14 @@
           <br />
           to share
         </div>
+        <% end %>
 
       </div>
       <div class="col-4 slogan">
         Following random words of wisdom since 1989
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <br />
         <%= link_to 'About', '#' %>
       </div>  
@@ -43,7 +45,7 @@
       <div class="container">
         <div class ="row">
           <div class="col-6">
-          <%= link_to "I, too, have some wisom to share...", "#", class: 'next-quote' %>
+          <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
           Proudly created by <a href="https://brephelps.netlify.com/">Bre Phelps</a><br />
